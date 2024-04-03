@@ -65,7 +65,8 @@ vim /etc/nginx/sites_available/nginx-2420.conf
 
 #### Paste the following server block configuration into the file
 
-> server {
+```
+server {
     listen 80;
     server_name 146.190.40.206;
     
@@ -76,3 +77,5 @@ vim /etc/nginx/sites_available/nginx-2420.conf
         try_files $uri $uri/ =404;
     }
 }
+```
+
