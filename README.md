@@ -14,10 +14,10 @@ sudo pacman -S vim nginx
 
 ```bash
 # Create a new directory named "/web/html/nginx-2420"
-mkdir -p /web/html/nginx-2420
+sudo mkdir -p /web/html/nginx-2420
 
 # Create a new file named "index.html" in the directory to store the website document
-vim /web/html/nginx-2420/index.html
+sudo vim /web/html/nginx-2420/index.html
 ```
 
 #### Paste the following website document into the file
@@ -57,10 +57,10 @@ vim /web/html/nginx-2420/index.html
 
 ```bash
 # Create a new directory named "/etc/nginx/sites_available"
-mkdir -p /etc/nginx/sites_available
+sudo mkdir -p /etc/nginx/sites_available
 
 # Create a new server block file named "/etc/nginx/sites_available/nginx-2420.conf" in the directory
-vim /etc/nginx/sites_available/nginx-2420.conf
+sudo vim /etc/nginx/sites_available/nginx-2420.conf
 ```
 
 #### Paste the following server block configuration into the file
@@ -83,7 +83,7 @@ server {
 
 ```bash
 # Create a new directory named "/etc/nginx/sites_enabled"
-mkdir -p /etc/nginx/sites_enabled
+sudo mkdir -p /etc/nginx/sites_enabled
 
 # Create the symbolic link
 sudo ln -s /etc/nginx/sites_available/nginx-2420.conf /etc/nginx/sites_enabled
