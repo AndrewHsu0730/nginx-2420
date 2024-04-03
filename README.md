@@ -23,3 +23,7 @@ vim mkdir -p /web/html/nginx-2420/website_document
 # Create a new server block configuration file
 vim /etc/nginx/nginx-2420.conf
 ```
+
+#### Paste the following configuration into the file
+
+> 
