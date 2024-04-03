@@ -79,3 +79,24 @@ server {
 }
 ```
 
+## Step 4: Create a symbolic link to enable the server block
+
+```bash
+# Create a new directory named "/etc/nginx/sites_enabled"
+mkdir -p /etc/nginx/sites_enabled
+
+# Create the symbolic link
+sudo ln -s /etc/nginx/sites_available/nginx-2420.conf /etc/nginx/sites_enabled
+```
+
+## Step 5: Reload Daemon and start the server
+
+```bash
+# Reload Daemon
+sudo systemctl daemon-reload
+
+# Start the server
+sudo systemctl start nginx.service
+```
+
+#### After you type the url [http://146.190.40.206:80](http://146.190.40.206:80), you can see the webpage successfully loaded.
