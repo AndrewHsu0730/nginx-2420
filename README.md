@@ -89,7 +89,15 @@ sudo mkdir -p /etc/nginx/sites_enabled
 sudo ln -s /etc/nginx/sites_available/nginx-2420.conf /etc/nginx/sites_enabled
 ```
 
-## Step 5: Reload Daemon and start the server
+## Step 5: Modify the original nginx config file
+
+#### Append the following line at the end of the http block
+
+```
+include /etc/nginx/sites_enabled/*;
+```
+
+## Step 6: Reload Daemon and start the server
 
 ```bash
 # Reload Daemon
