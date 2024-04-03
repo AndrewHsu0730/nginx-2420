@@ -13,11 +13,11 @@ sudo pacman -S vim nginx
 ## Step 2: Create a file that stores the website document
 
 ```bash
-# Create a new directory
+# Create a new directory named "/web/html/nginx-2420"
 mkdir -p /web/html/nginx-2420
 
-# Create a new file in the directory to store the website document
-vim mkdir -p /web/html/nginx-2420/index.html
+# Create a new file named "index.html" in the directory to store the website document
+vim /web/html/nginx-2420/index.html
 ```
 
 #### Paste the following website document into the file
@@ -52,3 +52,27 @@ vim mkdir -p /web/html/nginx-2420/index.html
 </body>
 </html>
 ```
+
+## Step 3: Create a new server block
+
+```bash
+# Create a new directory named "/etc/nginx/sites_available"
+mkdir -p /etc/nginx/sites_available
+
+# Create a new server block file named "/etc/nginx/sites_available/nginx-2420.conf" in the directory
+vim /etc/nginx/sites_available/nginx-2420.conf
+```
+
+#### Paste the following server block configuration into the file
+
+server {
+    listen 80;
+    server_name 146.190.40.206;
+    
+    root /web/html/nginx-2420;
+    index index.html;
+    
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
