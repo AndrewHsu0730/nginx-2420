@@ -131,7 +131,7 @@ Before we perform the connection test, we have to restart the nginx service firs
 sudo systemctl restart nginx.service
 ```
 
-Then, we can test if the connections work by running the following commands.
+Then, we can test if the connections work by running the following curl commands.
 
 ```bash
 curl http://<your_droplet_ip_address>
