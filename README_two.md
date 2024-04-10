@@ -2,7 +2,9 @@
 
 ## Step 1: Set up firewall using ufw
 
-#### Before we start setting up firewall, we should log into our droplet. Then, we can run the following commands to set up firewall.
+Before we start setting up firewall, we should log into our droplet.
+
+Then, we can run the following commands to set up firewall.
 
 ```bash
 # Upgrade installed packages
