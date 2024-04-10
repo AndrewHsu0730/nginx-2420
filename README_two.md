@@ -141,8 +141,14 @@ curl http://<your_droplet_ip_address>
 
 ```bash
 curl http://<your_droplet_ip_address>/hey
+```
 
+![img1](https://github.com/AndrewHsu0730/nginx-2420/blob/main/Screenshot_2.png)
+
+```bash
 curl -X POST -H "Content-Type: application/json" \
   -d '{"message": "Hello from your server"}' \
   http://<your_droplet_ip_address>/echo
 ```
+
+![img1](https://github.com/AndrewHsu0730/nginx-2420/blob/main/Screenshot_3.png)
