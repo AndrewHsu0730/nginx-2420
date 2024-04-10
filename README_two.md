@@ -2,6 +2,8 @@
 
 ## Step 1: Set up firewall using ufw
 
+#### Before we start setting up firewall, we should log into our droplet. Then, we can run the following commands to set up firewall.
+
 ```bash
 # Upgrade installed packages
 sudo pacman -Syu
@@ -30,3 +32,8 @@ sudo ufw status verbose
 
 ## Step 2: Set up backend
 
+#### Before we start setting up backend, we should log out of our droplet and connect to our remote servers using the sftp utility. 
+
+```bash
+
+```
