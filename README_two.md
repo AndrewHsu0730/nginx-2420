@@ -135,7 +135,11 @@ Then, we can test if the connections work by running the following commands.
 
 ```bash
 curl http://<your_droplet_ip_address>
+```
 
+![img1](https://github.com/AndrewHsu0730/nginx-2420/blob/main/Screenshot_1.png)
+
+```bash
 curl http://<your_droplet_ip_address>/hey
 
 curl -X POST -H "Content-Type: application/json" \
